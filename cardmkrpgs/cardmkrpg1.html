@@ -7,19 +7,39 @@
         <link rel="stylesheet" href="/GreetingCard/style.css"/>
     </head>
     <body>
-        <header class="navbr">
+        <div class="container">
+            <header class="navbr">
             <nav>
                 <ul>
                     <li><a href="/GreetingCard/index.html">Home Page</a></li>
                     <li><a href="/GreetingCard/cardmkrpgs/cardpage.html">Greeting Selection</a></li>
                 </ul>
             </nav>
-        </header>
-        <div class="head1">
+            </header>
+             <div class="head1">
+            <!--I will use emojis in this project from the website:- https://emojipedia.org/ and https://emojidb.org/-->
             <h1>
-                Let's Make a Greeting Card(Text only)
+                Let's Make a Greeting Card(Text and Emojis✨only)
             </h1>
+            </div>
+            
+            <div class="card1">
+            <label id="namepg1" for="name">Enter Recipient's Name:</label>
+            <input type="text" id="name" placeholder="Type a name">
+            <label id="namepg1" for="theme">Select Theme:</label>
+            <select id="theme">
+                <option value="birthday">🎂 Birthday</option>
+                <option value="congratulations">🎉 Congratulations</option>
+                <option value="love">❤️ Love</option>
+                <option value="friendship">🫶 Friendship</option>
+                <option value="diwali">🪔 Diwali</option>
+                <option value="eid">🌙 Eid</option>
+                <option value="chath puja">🪔🌅🙏 Chath Puja</option>
+                <option value="christmas">🎄🎅 Christmas</option>
+                <option value="Marriage">💒👰🏻‍♀️🤵🏻 Marriage</option>
+            </select>
+            <button id="downloadcard">download Card</button>
+            </div>
         </div>
-
     </body>
 </html>

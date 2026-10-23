@@ -1,0 +1,73 @@
+body {
+    font-family:"Ruffest", sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 15rem;
+}
+.container {
+    max-width: 60rem;
+    margin: auto;
+    background: #ffd3c9;
+    padding: 3.5rem;
+    border-radius: 2rem;
+    box-shadow: 1 4rem 10rem rgba(0, 0, 0, 0.526);
+}
+input,
+select,
+button {
+    width: 100%;
+    padding: 2rem 0;;
+    border: 1rem solid #ccc;
+    border-radius: 1rem;
+}
+button {
+    background-color: #f16a90;
+    color: #ffd3c9;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.card1 {
+    display: none;
+    background: #ffd3c9;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3); 
+}
+
+.container.navbr {
+    padding: 18px 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navbr ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+.navbr ul li a{
+    color:rgb(124, 129, 132);
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.navbr ul li a:hover{
+    color:#7a746c;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(221, 146, 123, 0.61);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+#namepg1 {
+    font-size: 2rem;
+}
+#name {
+    font-size:1.5rem;
+}
+#theme {
+    font-size: 1.5rem;
+}
+#downloadcard {
+    font-size: 1.5rem;
+}
