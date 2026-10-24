@@ -1,8 +1,8 @@
 body {
-    font-family:"Ariel", sans-serif;
+    font-family:"Arial", sans-serif;
     text-align: center;
     background-color: #f4f4f4;
-    margin: 15rem;
+    margin: 8rem;
 }
 
 /*Styling Home Page */
@@ -40,19 +40,11 @@ body {
     transition: transform 150ms;
 }
 
-
-/* styling the card selection page */
-
 .greetpg {
     display:flex;
     flex-direction: column;
 
 }
-
-
-
-
-
 
 
 /* stlyling the cardmkrpg1 */
@@ -62,7 +54,7 @@ body {
     background: #ffd3c9;
     padding: 3.5rem;
     border-radius: 2rem;
-    box-shadow: 1 4rem 10rem rgba(0, 0, 0, 0.526);
+    box-shadow: 0 4rem 10rem rgba(108, 72, 72, 0.526);
 }
 input,
 select,
@@ -129,11 +121,27 @@ button {
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
-#downloadcard {
+#generateCard {
     font-size: 1.5rem;
 }
-#downloadcard:hover {
+#generateCard:hover{
+    box-shadow:0 0.4rem 1.4rem 0 rgba(221, 146, 123, 0.61);
+    transform:translateY(-0.1rem);
+    transition: transform 150ms;
+}
+#downloadCard {
+    font-size: 1.5rem;
+}
+#downloadCard:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(221, 146, 123, 0.61);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+}
+
+.card {
+    display:none;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
 }

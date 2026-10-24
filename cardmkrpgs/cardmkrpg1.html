@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Greeting Card with Text only</title>
         <link rel="stylesheet" href="/GreetingCard/style.css"/>
+        <!--Bringing the html2canvas library here so that we can download the greeting card by using this we don't need to use the screenshot api-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -22,22 +24,30 @@
             </h1>
             
             <div class="card1">
-            <label id="namepg1" for="name">Enter Recipient's Name:</label>
-            <input type="text" id="name" placeholder="Type a name">
-            <label id="namepg1" for="theme">Select Theme:</label>
-            <select id="theme">
-                <option value="birthday">🎂 Birthday</option>
-                <option value="congratulations">🎉 Congratulations</option>
-                <option value="love">❤️ Love</option>
-                <option value="friendship">🫶 Friendship</option>
-                <option value="diwali">🪔 Diwali</option>
-                <option value="eid">🌙 Eid</option>
-                <option value="chath puja">🪔🌅🙏 Chath Puja</option>
-                <option value="christmas">🎄🎅 Christmas</option>
-                <option value="Marriage">💒👰🏻‍♀️🤵🏻 Marriage</option>
-            </select>
-            <button id="downloadcard">download Card</button>
+                  <label id="namepg1" for="name">Enter Recipient's Name:</label>
+                  <input type="text" id="name" placeholder="Type a name">
+                  <label id="namepg1" for="theme">Select Theme:</label>
+                  <select id="theme">
+                  <option value="Birthday">🎂 Birthday</option>
+                  <option value="Congratulations">🎉 Congratulations</option>
+                  <option value="Love">❤️ Love</option>
+                  <option value="Friendship">🫶 Friendship</option>
+                  <option value="Diwali">🪔 Diwali</option>
+                  <option value="Eid">🌙 Eid</option>
+                  <option value="Chhath_puja">🪔🌅🙏 Chath Puja</option>
+                  <option value="Christmas">🎄🎅 Christmas</option>
+                  <option value="Marriage">💒👰🏻‍♀️🤵🏻 Marriage</option>
+                  </select>
+
+                 <button id="generateCard">Generate Card</button>
+                 <div id="card" class="card">
+                 <h2 id="cardTitle"></h2>
+                 <p id="cardMessage"></p>
+                 </div>
             </div>
+             <button id="downloadCard">download Card</button>
         </div>
+        <script src="https://cloudflare.com"></script>
+        <script src="/GreetingCard/script.js"></script>
     </body>
 </html>
