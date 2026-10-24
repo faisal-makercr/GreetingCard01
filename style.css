@@ -1,9 +1,61 @@
 body {
-    font-family:"Ruffest", sans-serif;
+    font-family:"Ariel", sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     margin: 15rem;
 }
+
+/*Styling Home Page */
+.homepg {
+    background-color:bisque;
+    max-width:50%;
+    margin:auto;
+    padding: 3.5rem;
+    border-radius: 2rem;
+    box-shadow: 1 4rem 10rem rgb(0, 0, 0);
+}
+#head1 {
+    font-size:3rem;
+    margin-bottom: 2rem;
+}
+#head2 {
+    font-size:2rem;
+    margin-bottom: 2rem;
+}
+#para1 {
+    font-size:1.8rem;
+}
+#movin1 {
+    font-size: 1.6rem;
+    background-color:#f16a90;
+    color:rgb(212, 226, 235);
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius:0.5rem;
+    text-decoration:none;
+}
+#movin1:hover{
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(202, 117, 91, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+
+/* styling the card selection page */
+
+.greetpg {
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+
+/* stlyling the cardmkrpg1 */
 .container {
     max-width: 60rem;
     margin: auto;
@@ -28,16 +80,15 @@ button {
     margin-top: 2rem;
 }
 .card1 {
-    display: none;
     background: #ffd3c9;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3); 
 }
 
-.container.navbr {
-    padding: 18px 50px;
+.navbr {
+    padding: 2rem 4rem;
     display: flex;
     justify-content:space-between;
     align-items:center;
@@ -48,9 +99,9 @@ button {
     gap: 3rem;
 }
 .navbr ul li a{
-    color:rgb(124, 129, 132);
+    color:rgb(53, 55, 56);
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .navbr ul li a:hover{
     color:#7a746c;
@@ -62,12 +113,27 @@ button {
 #namepg1 {
     font-size: 2rem;
 }
-#name {
+#name{
     font-size:1.5rem;
+}
+#name:hover{
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(221, 146, 123, 0.61);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 #theme {
     font-size: 1.5rem;
 }
+#theme:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(221, 146, 123, 0.61);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
 #downloadcard {
     font-size: 1.5rem;
+}
+#downloadcard:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(221, 146, 123, 0.61);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
