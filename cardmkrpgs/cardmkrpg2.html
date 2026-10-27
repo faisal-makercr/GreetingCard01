@@ -15,11 +15,98 @@
                 </ul>
             </nav>
         </header>
-        <div class="head1">
+        <div class="container">
             <h1>
                 Let's Make a Greeting Card with Background Image too
             </h1>
+            <form>
+                <div class="form-group">
+                    <label for="message">Enter your message:</label>
+                    <textarea id="message" rows="3" placeholder="Type your message here...">
+                    </textarea>
+                    <div class="form-group">
+                        <label for="background">Choose a background color:</label>
+                        <input type="color" id="background">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                        <label for="backgroundImage">Upload a background Image</label>
+                        <input type="file" id="backgroundImage">
+                </div>
+
+                <div class="form-group">
+                        <label for="font">Select a font:</label>
+                        <select id="font">
+                            <option value="Arial">Arial</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                        <label for="fontSize">Select font size:</label>
+                        <input type="number" id="fontsize" min="16" max="48" value="30">
+                </div>
+                    
+                <div class="form-group">
+                        <label for="fontColor">Choose font color:</label>
+                        <input type="color" id="fontColor" value="#000000">
+                </div>
+
+                <div class="form-group">
+                        <label for="textAlignment">Text alignment:</label>
+                        <select id="textAlignment">
+                            <option value="left">Left</option>
+                            <option value="center">Center</option>
+                            <option value="right">Right</option>
+                        </select>
+                </div>
+
+                <div class="form-group text-decoration">
+                        <label>Text decoration:</label>
+                        <div class="text-decoration-Buttons">
+                            <button type="button"
+                            onclick="toggleTextDecoration('bold')">Bold</button>
+                            <button type="button"
+                            onclick="toggleTextDecoration('italic')">Italic</button>
+                            <button type="button"
+                            onclick="toggleTextDecoration('underline')">Underline</button>
+                        </div>
+                </div>
+                    
+                <div class="form-group bd-color">
+                        <label for="borderColor">Choose border color:</label>
+                        <input type="color" id="borderColor"
+                        value="#000000">
+                </div>
+                <div class="form-group">
+                        <label for="borderStyle">Select border style:</label>
+                        <select id="borderStyle">
+                            <option value="solid">Solid</option>
+                            <option value="dashed">Dashed</option>
+                            <option value="dotted">Dotted</option>
+                            <option value="dotted">Double</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                        <label for="borderThickness">Select border thickness:</label>
+                        <input type="number" id="borderThickness" min="0" max="20" value="0">
+                </div>
+
+                <div class="form-group">
+                        <button type="button" onclick="generateCard()">Generate Card</button>
+                </div>
+            </form>
+            <div class="form-group">
+                <div class="preview col-8">
+                    <canvas id="cardCanvas" width="400" height="200"></canvas>
+                </div>
+                <div class="col-3">
+                    <button type="button1" onclick="downloadCard()">Download Card</button>
+                </div>
+            </div>
         </div>
-        
+        <script src="/GreetingCard/scriptcard2.js"></script>
     </body>
 </html>
