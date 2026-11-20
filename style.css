@@ -27,26 +27,26 @@ body {
     cursor: pointer;
 }
 #head1 {
-    font-size:3rem;
+    font-size:2.5rem;
     margin-bottom: 2rem;
 }
 #head2 {
-    font-size:2rem;
+    font-size:1.5rem;
     margin-bottom: 2rem;
     font-family: cursive;
 }
 #para1 {
-    font-size:1.8rem;
+    font-size:1.5rem;
     margin: 4rem;
     font-family: cursive;
 }
 #para1-text {
-    font-size:1.8rem;
+    font-size:1.5rem;
     margin: 4rem;
     font-family: cursive;
 }
 #para1-img {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background-color:#f16a90;
     color:rgb(212, 226, 235);
     padding: 1.5rem;
@@ -60,12 +60,12 @@ body {
     transition: transform 150ms;
 }
 #movin1-text {
-    font-size:1.8rem;
+    font-size:1.5rem;
     margin: 4rem;
     font-family: cursive;
 }
 #movin1-img {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background-color:#f16a90;
     color:rgb(212, 226, 235);
     padding: 1.5rem;
@@ -79,7 +79,7 @@ body {
     transition: transform 150ms;
 }
 #movin1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background-color:#f16a90;
     color:rgb(212, 226, 235);
     padding: 1.5rem;
