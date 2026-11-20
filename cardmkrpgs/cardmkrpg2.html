@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/GreetingCard/stylecard2.css"/>
     </head>
     <body>
-        <header class="navbr">
+        <header class="navbrcard2">
             <nav>
                 <ul>
                     <li><a href="/GreetingCard/index.html">Home Page</a></li>
@@ -25,10 +25,10 @@
                     <label for="message">Enter your message:</label>
                     <textarea id="message" rows="3" placeholder="Type your message here...">
                     </textarea>
-                    <div class="form-group">
+                </div>
+                <div class="form-group">
                         <label for="background">Choose a background color:</label>
                         <input type="color" id="background">
-                    </div>
                 </div>
 
                 <div class="form-group">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-group">
                         <label for="fontSize">Select font size:</label>
-                        <input type="number" id="fontsize" min="16" max="48" value="30">
+                        <input type="number" id="fontSize" min="16" max="48" value="30">
                 </div>
                     
                 <div class="form-group">
@@ -86,7 +86,7 @@
                             <option value="solid">Solid</option>
                             <option value="dashed">Dashed</option>
                             <option value="dotted">Dotted</option>
-                            <option value="dotted">Double</option>
+                            <option value="double">Double</option>
                         </select>
                 </div>
 
@@ -96,15 +96,15 @@
                 </div>
 
                 <div class="form-group">
-                        <button type="button" onclick="generateCard()">Generate Card</button>
+                        <button type="button" id="generateBtn" onclick="generateCard()">Generate Card</button>
                 </div>
             </form>
-            <div class="form-group">
+            <div class="cards">
                 <div class="preview col-8">
-                    <canvas id="cardCanvas" width="400" height="200"></canvas>
+                    <canvas id="cardCanvas"></canvas>
                 </div>
                 <div class="col-3">
-                    <button type="button1" onclick="downloadCard()">Download Card</button>
+                    <button type="button" onclick="downloadCard()">Download Card</button>
                 </div>
             </div>
         </div>

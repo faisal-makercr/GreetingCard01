@@ -1,69 +1,140 @@
 body {
     font-family:'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #ffffff, #f1f1f1, #e3e3e3, #d1d1d1);
+    background: linear-gradient(135deg, #d0aeae, #dfceb8, #e3c3dd, #e25e5e);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 .container {
-    max-width: 950px;
-    height:550px;
-    padding:20px 40px;
-    background: linear-gradient(135deg, #f5f5f5, #e2d5c3, #e9c0e1, #e45656);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 16px;
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 1.25rem 2.5rem;
+    background: linear-gradient(135deg, #d0aeae, #dfceb8, #e3c3dd, #e25e5e);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    gap: 1.5rem;
+}
+.navbrcard2 {
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #d0aeae, #dfceb8, #e3c3dd, #e25e5e);
+}
+.navbrcard2 ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    background: linear-gradient(135deg, #e86767, #d2a3ce, #e3917e, #d5e6e6ba);
+    padding: 1rem 0.7rem;
+    cursor: pointer;
+    border-radius:0.5rem;
+}
+.navbrcard2 ul li a{
+    color: rgb(10, 10, 10);
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.navbrcard2 ul li a:hover{
+    color:#020202;
+    background: linear-gradient(135deg, #e64f4f, #ca82cf, #bb3776d7, #a1c487ba);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 h1 {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     background: linear-gradient(135deg, #e86767, #c62f7a, #b10000, #bb095cba);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 46px;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
 form {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+    align-items: end;
 }
 .form-group {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
+.form-group #message{
+    width: 400px;
+}
+.form-group #background{
+        width: 400px;
+        padding: 2rem;
+        cursor: pointer;
+}
+.form-group #backgroundImage{
+    width: 400px;
+    padding: 3rem;
+    border-color: #ffffff86;
+    cursor: pointer;
+}
+.form-group #font{
+    width: 250px;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #ffffff76;
+    font-family: cursive;
+}
+.form-group #fontSize {
+    width: 450px;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #ffffff77;
+}
+.form-group #fontColor {
+    width: 450px;
+    padding: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #ffffff6e;
+}
+.form-group #textAlignment {
+    width: 520px;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #ffffff86;
+    font-family: cursive;
+}
 label {
     font-weight:bold;
-    margin-bottom:5px;
-    font-size:18px;
+    margin-bottom:0.5rem;
+    font-size:1.8rem;
     color: #555;
 }
 
-textarea, input[type="number"], select {
-    padding:7px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 10px;
+textarea, input[type="number"], select, input[type="color"], input[type="file"] {
+    padding:1rem;
+    border: 0.2rem solid #ccc;
+    border-radius: 1.2rem;
+    font-size: 1.8rem;
     color: #333;
 }
 textarea {
     resize: vertical;
-}
-
-.form-group:last-child {
-    margin-bottom: 0;
+    grid-column:1/-1;
 }
 
 button {
-    padding: 10px;
+    padding: 1rem;
     background: linear-gradient(135deg, #e86767, #d2a3ce, #e3917e, #d5e6e6ba);
     color: #ffffff;
-    border: 2px solid #0d0202e3;
-    border-radius: 8px;
+    border: 0.18rem solid #0d0202e3;
+    border-radius: 0.7rem;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
@@ -74,82 +145,74 @@ button:hover {
 }
 
 .preview {
-    margin-top: 30px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-}
-
-canvas {
-    border: 1px solid #ccc;
-    background-color: #ffffff;
-    border-radius: 8px;
-    max-width: 100%;
+    gap: 1rem;
 }
 
 .text-decoration {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 #textContainer {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.text-decoration-buttons {
+.text-decoration-Buttons {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
 }
 
-.text-decoration-buttons button{
+.text-decoration-Buttons button{
     background-color: transparent;
     color: #ffffff;
-    padding: 5px 8px;
-    border-radius: 6px;
+    padding: 1.5rem 1.3rem;
+    border-radius: 1rem;
+    border-width: 0 0.2rem 0.2rem 0;
     cursor: pointer;
-    font-size: 8px;
+    font-size: 1.5rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
     text-transform: uppercase;
 }
 
-.text-decoration-buttons button:hover {
-    background-color: #af4c4c;
-    color: #ffffff;
-}
-.form-group:last-child button {
-    margin-top: 27px;
-    margin-left: 20px;
-    width: 80%;
-    background: linear-gradient(135deg, #e86767, #d2a3ce, #e3917e, #d5e6e6ba);
+.text-decoration-Buttons button:hover {
+    background-color: #af4c4c9f;
+    color: #ffffffed;
+    border-width: 0 0.3rem 0.3rem 0;
+    transform: translateY(-3px);
 }
 
+.form-group #borderColor {
+    width: 520px;
+    padding: 2rem;
+    cursor: pointer;
+    background-color: #ffffff7d;
+}
+.form-group #borderStyle {
+    width: 520px;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: cursive;
+    background-color: #ffffff78;
+}
+.form-group #borderThickness {
+    width: 450px;
+    padding: 2rem;
+    cursor: pointer;
+    background-color: #ffffff83;
+}
+.form-group #generateBtn{
+    width: 520px;
+    padding: 2rem;
+    border-color:#000000;
+    cursor: pointer;
+}
 .form-group:last-child button:hover {
     background: linear-gradient(135deg, #e64f4f, #ca82cf, #bb3776d7, #a1c487ba);
-}
-
-canvas {
-    border: none;
-    background-color: #ffffff;
-    border-radius: 8px;
-    max-width: 100%;
-    border-color: #000000;
-    border-width: 0;
-    border-style: none;
-}
-
-canvas[data-border-style="solid"] {
-    border-style: solid;
-}
-
-canvas [data-border-style="dashed"] {
-    border-style: dashed;
-}
-canvas [data-border-style="dotted"] {
-    border-style: dotted;
-}
-canvas [data-border-style="double"] {
-    border-style: double;
 }
 
 .cards {
@@ -157,22 +220,38 @@ canvas [data-border-style="double"] {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap:1.5rem;
+    margin-top: auto;
+    width: 100%;
 }
 
 .preview {
-    flex: 1 0 50%;
-    max-width: 60%;
+    flex: 1 1 60%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #cardCanvas {
-    border: 1px solid #ccc;
-    width: 70%;
+    border: 0.2rem solid #ccc;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    width: 60%;
     height: auto;
 }
 
 .col-3 {
-    flex: 1 0 30%;
-    max-width: 30%;
+    flex: 1 1 30%;
+    display: flex;
+    align-items: center;
+
+}
+.col-3 button {
+    width: 450px;
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: #ffffff;
 }
 
 button[type="button1"] {
@@ -182,7 +261,29 @@ button[type="button1"] {
 button[type="button1"] {
     display: block;
     width: 100%;
-    font-size: 20px;
-    padding: 15px 10px;
+    font-size: 1.5rem;
+    padding: 1rem 0.8rem;
     color: #ffffff;
+}
+
+canvas {
+    border: 0.1rem solid #ccc;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    max-width: 100%;
+    border-color: #000000;
+    border-width: 0;
+    border-style: none;
+}
+canvas[data-border-style="solid"] {
+    border-style: solid;
+}
+canvas [data-border-style="dashed"] {
+    border-style: dashed;
+}
+canvas [data-border-style="dotted"] {
+    border-style: dotted;
+}
+canvas [data-border-style="double"] {
+    border-style: double;
 }

@@ -1,15 +1,21 @@
 body {
-    font-family:"Arial", sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 8rem;
+    font-family:'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #d0aeae, #dfceb8, #e3c3dd, #e25e5e);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /*Styling Home Page */
 .homepg {
-    background-color:bisque;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(255, 228, 196, 0.482);
     max-width:50%;
-    margin:auto;
+    margin-top: 20rem;
     padding: 3.5rem;
     border-radius: 2rem;
     box-shadow: 1 4rem 10rem rgb(0, 0, 0);
@@ -21,9 +27,12 @@ body {
 #head2 {
     font-size:2rem;
     margin-bottom: 2rem;
+    font-family: cursive;
 }
 #para1 {
     font-size:1.8rem;
+    margin: 4rem;
+    font-family: cursive;
 }
 #movin1 {
     font-size: 1.6rem;
