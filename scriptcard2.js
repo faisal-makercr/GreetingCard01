@@ -15,13 +15,18 @@ function generateCard() {
     const textAlignment = document.getElementById('textAlignment').value;
     const backgroundImageInput = document.getElementById('backgroundImage');
     const background = document.getElementById('background').value;
-    const useBackgroundImage = document.backgroundImage.files && backgroundImage.files[0];
+
+    const useBackgroundImage = 
+    backgroundImageInput && 
+    backgroundImageInput.files && 
+    backgroundImageInput.files[0];
+
     const borderColor = document.getElementById('borderColor').value;
     const borderThickness = parseInt(document.getElementById('borderThickness').value, 10);
     const borderStyle = document.getElementById('borderStyle').value;
 
     canvas.style.backgroundColor = useBackgroundImage ? 'transparent' : background;
-    ctx.clearRect(0, 0, canvas.clientWidth, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeStyle = borderColor;
     ctx.lineWidth = borderThickness;
     ctx.setLineDash([]);
@@ -49,9 +54,9 @@ function generateCard() {
 }
 
 function drawText(message, font, fontSize, fontColor, textAlignment) {
-    ctx.font = `${fontDecorations.bold ? 'bold' : ''}$
-    {fontDecorations.italic ? 'italic' : ''}${fontSize}$
-    {font}`;
+    const weight = fontDecorations.bold ? 'bold' : 'normal';
+    const style = fontDecorations.italic ? 'italic' : 'normal';
+    ctx.font = `${style} ${weight} ${fontSize} ${font}`;
     ctx.fillStyle = fontColor;
     ctx.textBaseline = 'middle';
 
@@ -63,7 +68,7 @@ function drawText(message, font, fontSize, fontColor, textAlignment) {
     const words = message.split(/\s+/);
     const lineHeight = parseInt(fontSize, 10) * 1.5;
     const totalTextHeight = words.length* lineHeight;
-    const starty = (canvas.height - totalTextHeight) / 2;
+    let starty = (canvas.height - totalTextHeight) / 2;
     const lineWidths = words.map((word) => ctx.measureText(word).width);
     let currentX;
     const maxWidth = canvas.width - 40;
@@ -73,7 +78,7 @@ function drawText(message, font, fontSize, fontColor, textAlignment) {
     }
     else if (textAlignment === 'center') {
     const totalWordsWidth = lineWidths.reduce ((acc, width) => acc + width, 0);
-    currentX = (canvas.width - totalWordsWidth - (lineWidths.length - 1)* ctx.measureText('').width)/2;
+    currentX = (canvas.width - totalWordsWidth - (lineWidths.length - 1)* ctx.measureText(' ').width)/2;
     }
     else if (textAlignment === 'right') {
         const totalWordsWidth = lineWidths.reduce((acc, width)=> acc + width, 0)+ (lineWidths.length -1)* ctx.measureText(' ').width;
@@ -115,14 +120,14 @@ function drawText(message, font, fontSize, fontColor, textAlignment) {
 }
 
 function toggleTextDecoration(decoration) {
-    fontDecorations[decoartion] = !fontDecorations[decoration];
+    fontDecorations[decoration] = !fontDecorations[decoration];
     generateCard();
 }
 
 function downloadCard() {
     const tempCanvas = document.createElement('canvas');
     tempCanvas.width = canvas.width;
-    tempCanvas.heigth = canvas.height;
+    tempCanvas.height = canvas.height;
     const tempCtx = tempCanvas.getContext('2d');
 
     tempCtx.drawImage(canvas, 0, 0);

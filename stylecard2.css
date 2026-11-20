@@ -6,6 +6,8 @@ body {
     min-height: 100vh;
 }
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     min-height: 100vh;
     padding: 1.25rem 2.5rem;
@@ -57,7 +59,6 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.625rem;
-    align-items: end;
 }
 .form-group {
     display: flex;
@@ -278,12 +279,12 @@ canvas {
 canvas[data-border-style="solid"] {
     border-style: solid;
 }
-canvas [data-border-style="dashed"] {
+canvas[data-border-style="dashed"] {
     border-style: dashed;
 }
-canvas [data-border-style="dotted"] {
+canvas[data-border-style="dotted"] {
     border-style: dotted;
 }
-canvas [data-border-style="double"] {
+canvas[data-border-style="double"] {
     border-style: double;
 }

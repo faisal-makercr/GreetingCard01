@@ -15,10 +15,16 @@ body {
     text-align: center;
     background-color:rgba(255, 228, 196, 0.482);
     max-width:50%;
-    margin-top: 20rem;
+    margin:auto;
     padding: 3.5rem;
     border-radius: 2rem;
-    box-shadow: 1 4rem 10rem rgb(0, 0, 0);
+    box-shadow: 0 4rem 10rem rgba(106, 103, 103, 0.601);
+    transition: 0.5s;
+}
+.homepg #movin1:hover {
+    transform: translateY(-5px);
+    border-width: 0 0.2rem 0.2rem 0;
+    cursor: pointer;
 }
 #head1 {
     font-size:3rem;
@@ -33,6 +39,44 @@ body {
     font-size:1.8rem;
     margin: 4rem;
     font-family: cursive;
+}
+#para1-text {
+    font-size:1.8rem;
+    margin: 4rem;
+    font-family: cursive;
+}
+#para1-img {
+    font-size: 1.6rem;
+    background-color:#f16a90;
+    color:rgb(212, 226, 235);
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius:0.5rem;
+    text-decoration:none;
+}
+#para1-img:hover{
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(202, 117, 91, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+#movin1-text {
+    font-size:1.8rem;
+    margin: 4rem;
+    font-family: cursive;
+}
+#movin1-img {
+    font-size: 1.6rem;
+    background-color:#f16a90;
+    color:rgb(212, 226, 235);
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius:0.5rem;
+    text-decoration:none;
+}
+#movin1-img:hover{
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(202, 117, 91, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 #movin1 {
     font-size: 1.6rem;
@@ -111,7 +155,7 @@ button {
     transition: transform 150ms;
 }
 
-#namepg1 {
+.namepg1 {
     font-size: 2rem;
 }
 #name{
