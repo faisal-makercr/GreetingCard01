@@ -14,3 +14,31 @@ emojipedia.org and https://emojidb.org
 ## This is how the website looks
 ![Home](</greetscreenshot/Screenshot 2026-11-20 230236.png>)
 Home Page
+
+![Custom Greeting Card Generator choices page](</greetscreenshot/Screenshot 2026-11-20 231026.png>)
+Custom Greeting Card Choices
+
+![Greeter with text and emojis only](</greetscreenshot/Screenshot 2026-11-20 231044.png>)
+Text and Emoji Greeter
+
+![Greeter with more freedom for the user](</greetscreenshot/Screenshot 2026-11-20 231055.png>)
+Greeter with more freedom for the user
+
+## Here is the link of the website:-
+<https://greetingcard01.vercel.app>
+
+## Here is the Github repository of the website:-
+<https://github.com/faisal-makercr/GreetingCard01.git>
+
+## Languages I Used:-
+* HTML
+* CSS
+* JAVASCRIPT
+
+## Deployment:-
+I used Vercel for Deployment. People can just visit the website by just using the link of the website
+
+## Some features of Greeting Card Generator:-
+The users will have choose/Options to choose from of what want to give a normal one with the greeting, emojis, name and white background.
+The user can use all of it plus a background image of his choose.
+
